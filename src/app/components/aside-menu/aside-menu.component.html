@@ -1,0 +1,23 @@
+<nav class="flex flex-col flex-1 h-full gap-2">
+    <div class="bg-zinc-900 rounded-lg p-2">
+        <ul>
+            <aside-menu-item href="/home">
+                <svg-icon src="/assets/icons/home.svg"></svg-icon> Home
+            </aside-menu-item>
+            <aside-menu-item href="/search">
+                <svg-icon src="/assets/icons/search.svg"></svg-icon> Search
+            </aside-menu-item>
+        </ul>
+    </div>
+
+    <div class="bg-zinc-900 rounded-lg p-2 flex-1">
+        <ul>
+            <aside-menu-item href="/library">
+                <svg-icon src="/assets/icons/library.svg"></svg-icon> Your Library
+            </aside-menu-item>
+            @for (playlist of playlists; track playlist.id) {
+                <aside-menu-card [playlist]="playlist"></aside-menu-card>
+            }
+        </ul>
+    </div>
+</nav>
