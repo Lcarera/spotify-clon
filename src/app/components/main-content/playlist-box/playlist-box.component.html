@@ -1,0 +1,16 @@
+<a [href]="'/playlist/' + playlist.id"
+    class="playlist-item transition-all duration-300 flex relative p-2 overflow-hidden gap-5 
+    rounded-md hover:bg-zinc-800 shadow-lg hover:shadow-xl bg-zinc-500/30 w-44 flex-col">
+    <picture class="aspect-square h-auto w-full flex-none">
+        <img [src]="playlist.cover" class="h-full w-full object-cover rounded-md" [alt]="'Cover of' + playlist.title">
+    </picture>
+
+    <div class="flex flex-auto flex-col">
+        <h4 class="text-white text-sm">
+            {{ playlist.title }}
+        </h4>
+        <span class="text-xs text-gray-400">
+            {{ artistsString }}
+        </span>
+    </div>
+</a>
