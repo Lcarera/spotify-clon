@@ -1,10 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { Playlist } from '@assets/data/data';
 
 @Component({
   selector: 'aside-menu-card',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './aside-menu-card.component.html',
   styleUrl: './aside-menu-card.component.scss'
 })
