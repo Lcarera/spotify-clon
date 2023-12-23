@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'aside-menu-item',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './aside-menu-item.component.html',
   styleUrl: './aside-menu-item.component.scss'
 })
