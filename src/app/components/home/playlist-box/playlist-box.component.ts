@@ -1,10 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Playlist } from '@assets/data/data';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'playlist-box',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './playlist-box.component.html',
   styleUrl: './playlist-box.component.scss'
 })
