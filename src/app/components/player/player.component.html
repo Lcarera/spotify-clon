@@ -1,0 +1,25 @@
+<div class="flex flex-row justify-between w-full px-1 z-50">
+    <div class="w-[200px]">
+        Current Song...
+    </div>
+
+    <div class="grid place-content-center gap-4 flex-1">
+        <div class="flex justify-center flex-col items-center">
+            <button class="bg-white rounded-full p-2 text-black" (click)="changePlayState()">
+                @if(isPlaying()){
+                    <svg-icon src="/assets/icons/pause.svg"></svg-icon>
+                }
+                @else {
+                    <svg-icon src="/assets/icons/play.svg"></svg-icon>
+                }
+            </button>
+        </div>
+        Player
+    </div>
+
+    <div class="grid place-content-center">
+        Volume
+    </div>
+
+    <audio #audioRef></audio>
+</div>
